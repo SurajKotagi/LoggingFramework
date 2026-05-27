@@ -1,16 +1,7 @@
+package core;
+
 public class SimpleLogger implements Logger {
-    private LoggerType type;
-    private int loggerLevel;
-
-    @Override
-    public void setLogeLevel(int level) {
-        this.loggerLevel = level;
-    }
-
-    @Override
-    public void setLogType(LoggerType type) {
-        this.type = type;
-    }
+    private LoggerLevel level;
 
     @Override
     public void info(String messege) {
@@ -39,6 +30,17 @@ public class SimpleLogger implements Logger {
     @Override
     public void setOutputType(OutputType outputType) {
         this.setOutputType(outputType);
+    }
+
+    @Override
+    public void setLogeLevel(int level) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setLogeLevel'");
+    }
+
+    @Override
+    public void setLoggerLevel(LoggerLevel level) {
+        this.level = level;
     }
 
 }

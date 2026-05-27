@@ -1,9 +1,11 @@
+package core;
+
 public interface Logger {
     void setOutputType(OutputType outputType);
 
     void setLogeLevel(int level);
 
-    void setLogType(LoggerType type);
+    void setLoggerLevel(LoggerLevel level);
 
     void info(String messege);
 
